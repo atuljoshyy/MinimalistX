@@ -18,7 +18,7 @@ For now, the extension is **not** available in the Chrome webstore (this may cha
 ✅ Download / clone this repo\
 ✅ Navigate to [chrome://extensions](chrome://extensions)\
 ✅ Enable developer mode\
-✅ Click on Load Unpacked and select the ```MininalistX``` folder \
+✅ Click on Load Unpacked and select the ```MinimalistX``` folder \
 ✅ MinimalistX will be installed now.
 
     
