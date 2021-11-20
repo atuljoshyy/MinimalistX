@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Tab</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/icons/icon.png" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: "No Safety Zone";
+        src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      html,
+      body {
+        font-family: "No Safety Zone";
+        height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+      }
+      body {
+        background: #0a090e;
+        color: #72727283;
+        overflow: hidden;
+      }
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+
+      .title {
+        /*line-height:  1;*/
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+      }
+      .titleMain {
+        -webkit-animation: fade-in-bottom 0.4s
+          cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      }
+      .titleSub {
+        -webkit-animation: fade-in-bottom 0.4s
+          cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation-delay: 120ms;
+      }
+
+      @-webkit-keyframes fade-in-bottom {
+        0% {
+          -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in-bottom {
+        0% {
+          -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .titleMain {
+        font-weight: 100;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+      }
+      .titleSub {
+        font-weight: 100;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: rgb(226, 255, 179);
+        margin-top: 20px;
+      }
+      ::selection {
+        background-color: #403a8a;
+        outline: none;
+        border: none;
+      }
+
+      options {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: #222830;
+        border: 2px solid #cc5630;
+      }
+      options h2 {
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+      }
+      options button {
+        display: block;
+        width: 100%;
+      }
+      .credits {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .credits :hover {
+        color: burlywood;
+      }
+      .credits {
+        cursor: pointer;
+        color: white;
+      }
+      .credits {
+        -webkit-animation: fade-in-bottom 0.4s
+          cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation-delay: 200ms;
+      }
+
+      body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main id="main">
+      <h1 class="title titleMain" id="titleMain" unselectable="on"></h1>
+      <h2 class="title titleSub" id="titleSub" unselectable="on"></h2>
+    </main>
+    <div class="credits">
+      <p id="credit">Created by <a href="https://atuljoshy.ml">Atul Joshy 🚀</a> </p>
+    </div>
+    <options id="options" style="display: none">
+      <h2>Options</h2>
+      <p>
+        <button id="colorBackground">Color Background</button>
+      </p>
+      <p>
+        <button id="colorText">Color Text</button>
+      </p>
+      <p>
+        <button id="resetAll">Reset to Defaults<br />(Text & Color)</button>
+      </p>
+      <p>
+        <button id="closeOptions">Close Options</button>
+      </p>
+    </options>
+    <script src="vendors/vanilla-picker.min.js"></script>
+    <script src="scripts/app2.js"></script>
+  </body>
+</html>
