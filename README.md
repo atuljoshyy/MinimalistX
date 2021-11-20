@@ -33,10 +33,6 @@ For now, the extension is **not** available in the Chrome webstore (this may cha
 - Image Support
 
   
-## Technologies used
-
-![JavaScript_HTML_CSS_](https://pimp-my-readme.webapp.io/pimp-my-readme/technology?technology=JavaScript_HTML_CSS_)
-  
 ## Get in touch
 [🤖 Github](https://www.github.com/AtulJoshyy)\
 [📸 Instagram](https://www.instagram.com/atuljoshy/)\
@@ -44,3 +40,8 @@ For now, the extension is **not** available in the Chrome webstore (this may cha
 [🐦 Twitter](https://twitter.com/atuljoshy)\
 [💌 Email](mailto:atuljoshyy@gmail.com)
 
+
+## Technologies used
+
+![JavaScript_HTML_CSS_](https://pimp-my-readme.webapp.io/pimp-my-readme/technology?technology=JavaScript_HTML_CSS_)
+  
